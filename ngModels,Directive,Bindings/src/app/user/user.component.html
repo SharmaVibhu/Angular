@@ -1,0 +1,21 @@
+
+<h1>user list</h1>
+
+
+
+<button type="button" (click)="saveData()">saveData</button>
+<button type="button" (click)="updateData(user)">UpdateData</button>
+    
+<ul>
+
+    <li *ngFor="let user of users; let i = index">
+        <span (click) = "getUserById(i,user)">
+            {{user.id}}.{{user.name}}-{{user.age}}
+            
+        </span>
+        <input type="text" [(ngModel)]="user.id">
+        <input type="text" [(ngModel)]="user.name">
+        <input type="text" [(ngModel)]="user.age">
+        
+</li>
+</ul>
