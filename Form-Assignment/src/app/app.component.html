@@ -1,0 +1,18 @@
+<h1>FORM</h1>
+<form #fom="ngForm" (ngSubmit)="getValues(fom.value)" >
+
+    <input type="text" ngModel name="id" placeholder = "enter your uniue id">
+    <br><br>
+    <input type="text" ngModel name="user" placeholder = "enter the name">
+    <br><br>
+    <input type="text" ngModel name="age" placeholder="enter the age">
+    <br><br>
+    <input type="text" ngModel name="roles" placeholder="enter your role">
+    <br><br>
+    <button>Get Values</button>
+</form>
+
+
+<app-user></app-user>
+
+
